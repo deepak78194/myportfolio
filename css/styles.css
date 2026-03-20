@@ -1076,3 +1076,45 @@ a:hover {
     flex-wrap: wrap;
   }
 }
+
+/* =============================================
+   Touch / Mobile: Always-on Glow
+   Targets phones & tablets where hover doesn't
+   exist — glow is shown permanently on scroll
+   ============================================= */
+@media (hover: none) and (pointer: coarse) {
+  .skill-card {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+
+  .skill-card .skill-tag {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+  }
+
+  .stat-card {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+
+  .ai-section {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 32px var(--accent-glow);
+  }
+
+  .timeline-content {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+
+  .education-card {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+
+  .contact-card {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+}
