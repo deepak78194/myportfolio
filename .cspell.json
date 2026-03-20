@@ -1,0 +1,41 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "Deepak",
+    "Balaraman",
+    "Cognizant",
+    "Muthayammal",
+    "Namakkal",
+    "Tamil",
+    "Nadu",
+    "Chennai",
+    "deepakbalaraman",
+    "deepak78194",
+    "Micronaut",
+    "IntelliJ",
+    "JetBrains",
+    "JUnit",
+    "PostgreSQL",
+    "Hibernate",
+    "JDBC",
+    "JPA",
+    "microservices",
+    "microservice",
+    "agentic",
+    "codebase",
+    "observability",
+    "refactoring",
+    "noopener",
+    "noreferrer",
+    "CGPA",
+    "WAF",
+    "POC",
+    "APIs"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    ".github"
+  ]
+}

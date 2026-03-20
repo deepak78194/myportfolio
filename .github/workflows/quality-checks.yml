@@ -1,0 +1,41 @@
+name: Quality Checks
+
+# Runs on every push to main and on all pull requests.
+# Two jobs run in parallel:
+#   1. html-validate — checks index.html against the W3C HTML5 spec
+#   2. spell-check   — checks for typos in HTML and Markdown files
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  html-validate:
+    name: Validate HTML5
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate HTML against W3C spec
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+
+  spell-check:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check spelling in HTML and Markdown
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          # Only check human-readable files; skip CSS/JS to avoid false positives
+          files: "**/*.{html,md}"
+          config: .cspell.json
+          # Report errors but don't block the workflow on a first-time typo
+          strict: false
