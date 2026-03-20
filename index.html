@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak B — Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Deepak B — Java Full Stack Developer specializing in backend systems, microservices architecture, and AI-assisted development." />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deepak B — Java Full Stack Developer" />
+  <meta property="og:description" content="Java Full Stack Developer specializing in microservices, performance optimization, and agentic AI workflows." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230d1117'/><text x='50' y='68' font-size='48' font-family='system-ui,sans-serif' font-weight='700' fill='%2358a6ff' text-anchor='middle'>DB</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>DB<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Deepak B</h1>
+      <div class="hero-title">
+        <span class="hero-title-static">Java Full Stack Developer</span>
+        <span class="hero-title-separator">&nbsp;|&nbsp;</span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-summary">I design and build backend systems — microservices, REST APIs, and performance-critical data layers, with a focus on end-to-end system reliability.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#about" class="btn btn-outline">Know More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="code-hello">
+            <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br />
+            &nbsp;&nbsp;<span class="code-key">name</span>: <span class="code-string">"Deepak B"</span>,<br />
+            &nbsp;&nbsp;<span class="code-key">role</span>: <span class="code-string">"Java Full Stack Developer"</span>,<br />
+            &nbsp;&nbsp;<span class="code-key">location</span>: <span class="code-string">"Chennai, India"</span>,<br />
+            &nbsp;&nbsp;<span class="code-key">specialization</span>: <span class="code-string">"Backend Systems"</span>,<br />
+            &nbsp;&nbsp;<span class="code-key">focus</span>: [<span class="code-string">"Microservices"</span>, <span class="code-string">"REST APIs"</span>, <span class="code-string">"Performance"</span>]<br />
+            };
+          </div>
+          <p>
+            I'm a backend-focused Java engineer with around three years of experience building and evolving production-grade systems. My work primarily revolves around designing microservices, building reliable REST APIs, and improving performance across service and data layers.
+          </p>
+          <p>
+            At Cognizant, I've worked on systems that run in production at scale, where my responsibilities include decomposing legacy architectures into smaller Micronaut and Spring Boot services, optimizing database interactions, and ensuring services remain efficient under load. My focus is consistently on maintainability, performance, and clean service boundaries.
+          </p>
+          <p>
+            I've been working on improving developer workflows by introducing AI-assisted development practices. This includes designing agentic workflows, refining repository-level instructions, and leveraging tools like GitHub Copilot to reduce repetitive work, accelerate refactoring, and improve overall development efficiency — without compromising code quality or architectural clarity.
+          </p>
+          <p>
+            I'm particularly interested in how small teams can scale engineering output through better system design and intelligent tooling, rather than increased complexity.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number">3.5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills &amp; Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="skill-category">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag skill-tag-secondary">Python</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 class="skill-category">Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Micronaut</span>
+            <span class="skill-tag skill-tag-secondary">Angular</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          </div>
+          <h3 class="skill-category">Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Oracle</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3 class="skill-category">Testing</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JUnit</span>
+            <span class="skill-tag">REST Assured</span>
+            <span class="skill-tag">Cucumber</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3 class="skill-category">Dev Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">IntelliJ IDEA</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jenkins</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+          </div>
+          <h3 class="skill-category">Cloud &amp; Architecture</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI / Agentic Development -->
+      <div class="ai-section reveal">
+        <div class="ai-section-header">
+          <div class="ai-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92a1 1 0 0 0-.75.97V13"></path><path d="M12 13a4 4 0 0 1 4 4 4 4 0 0 1-8 0 4 4 0 0 1 4-4z"></path><path d="M9 6a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.92a1 1 0 0 1 .75.97V13"></path><circle cx="12" cy="17" r="2"></circle><path d="M5 10h2"></path><path d="M17 10h2"></path><path d="M12 2v1"></path></svg>
+          </div>
+          <h3>AI-Assisted Development</h3>
+          <span class="ai-badge">Exploring</span>
+        </div>
+        <div class="ai-tags">
+          <span class="skill-tag skill-tag-ai">GitHub Copilot</span>
+          <span class="skill-tag skill-tag-ai">AI Code Generation</span>
+          <span class="skill-tag skill-tag-ai">Copilot Customization</span>
+          <span class="skill-tag skill-tag-ai">Prompt Engineering</span>
+          <span class="skill-tag skill-tag-ai">AI-Assisted Refactoring</span>
+          <span class="skill-tag skill-tag-ai">Workflow Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer</h3>
+              <span class="timeline-company">Cognizant Technology Solutions</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                July 2022 – Present
+              </span>
+              <span class="timeline-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Chennai, Tamil Nadu
+              </span>
+            </div>
+
+            <h4 class="exp-subheading">What I Own</h4>
+            <ul class="timeline-bullets">
+              <li>Backend development for an enterprise authentication platform acting as a central gateway for multiple production systems across business units.</li>
+              <li>Designing and building Micronaut-based microservices, decomposed from a legacy monolith with well-defined service boundaries and stable API contracts.</li>
+              <li>Deploying and operating services on AWS (compute, containers, managed databases, observability), supported by Jenkins CI/CD pipelines.</li>
+              <li>Initiated and designed repository-level agentic workflows, enabling teams to adopt AI-assisted development patterns and improve engineering productivity.</li>
+              <li>Maintaining production system reliability and security by diagnosing issues, fixing defects, and implementing protections, including edge-level controls (AWS WAF) to mitigate abusive traffic.</li>
+            </ul>
+
+            <h4 class="exp-subheading">Key Impact</h4>
+            <ul class="timeline-bullets">
+              <li>Reduced API latency by migrating from JPA/Hibernate to Micronaut JDBC, supported by query optimization and POC-driven validation.</li>
+              <li>Improved developer productivity by introducing AI-assisted workflows for SQL refactoring and backend development, reducing repetitive effort and improving consistency across the codebase.</li>
+              <li>Modernized runtime and improved system stability by upgrading from Java 8 to Java 11 with a zero-downtime production rollout.</li>
+              <li>Strengthened system security by implementing and tuning edge-level protections, reducing automated and abusive traffic reaching production.</li>
+              <li>Contributed to engineering standards for REST API design and microservices through code reviews, documentation, and internal knowledge sharing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="education-card reveal">
+        <div class="education-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path></svg>
+        </div>
+        <div class="education-info">
+          <h3>Bachelor of Technology in Information Technology</h3>
+          <p class="education-college">Muthayammal Engineering College</p>
+          <div class="education-meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              2018 – 2022
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Namakkal, Tamil Nadu
+            </span>
+            <span class="education-cgpa">CGPA: 8.48</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <p class="contact-intro reveal">
+        If you'd like to talk about backend engineering, potential opportunities, or just want to connect — I'm happy to hear from you.
+      </p>
+      <div class="contact-grid reveal">
+        <a href="mailto:deepak78194@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">deepak78194@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/deepakbalaraman" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">deepakbalaraman</span>
+        </a>
+        <a href="tel:+918098320070" class="contact-card">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91-8098320070</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Deepak B</strong></p>
+      <p class="footer-sub">Built with vanilla HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
